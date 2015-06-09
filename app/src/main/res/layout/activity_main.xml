@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/root_container">
+
+
+    <RelativeLayout
+        android:id="@+id/img_process_container"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <ImageView
+            android:id="@+id/img_progress_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/imgtag_test1" />
+
+
+
+        <!--
+        <com.kit.yinp.imgtagtest.view.ImgTagView
+            android:id="@+id/img_process_tag_view"
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:layout_centerInParent="true"/>
+        -->
+
+
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_process_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="展示模式：有波纹和缩放动画，不可移动位置。\n编辑模式：无动画，可输入标签文字，移动位置和变换结构" />
+
+
+    <Button
+        android:id="@+id/switch_mode_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="展示模式"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/to_edit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="编辑"
+        android:layout_toRightOf="@+id/switch_mode_btn"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

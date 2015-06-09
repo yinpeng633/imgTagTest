@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:background="#88000000"
+    >
+
+    <TextView
+        android:id="@+id/detail_apply_register_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="标签信息"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/detail_apply_register_name_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_apply_register_tips"
+        android:layout_marginTop="40dp"
+        android:text="标签1："
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/detail_apply_register_name_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/detail_apply_register_name_tips"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/detail_apply_register_name_tips"
+        android:hint="请输入"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textSize="14dp" />
+
+
+    <TextView
+        android:id="@+id/detail_apply_register_phone_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_apply_register_name_tips"
+        android:layout_marginTop="40dp"
+        android:text="标签2："
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/detail_apply_register_phone_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/detail_apply_register_phone_tips"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/detail_apply_register_phone_tips"
+        android:hint="价格"
+        android:inputType="number"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textSize="14dp" />
+
+
+    <TextView
+        android:id="@+id/detail_apply_register_qq_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_apply_register_phone_tips"
+        android:layout_marginTop="40dp"
+        android:text="标签3："
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/detail_apply_register_qq_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/detail_apply_register_qq_tips"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/detail_apply_register_qq_tips"
+        android:hint="请输入好评"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textSize="14dp" />
+
+
+    <Button
+        android:id="@+id/edit_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="完成"
+        android:layout_below="@+id/detail_apply_register_qq_tips"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
